@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+    <link rel="stylesheet" href="Sample.css">
+    <title>サンプル</title>
+</head>
+    <body>
+        <h1>商品のご紹介</h1>
+    <script type="text/javascript">
+        for(var i = 0; i < 3; i++){
+            for(var j = 0; j < 3; j++){
+                if((i + j) % 3 === 0){
+                    document.write('<a href="car1.jpg/"><img src="car1.jpg"/></a>');
+                } else if((i + j) % 3 === 1){
+                    document.write('<a href="car2.jpg/"><img src="car2.jpg"/></a>');
+                } else {
+                    document.write('<a href="car3.jpg/"><img src="car3.jpg"/></a>');
+                }
+            }
+            document.write('<br>');
+        }
+    </script>
+    </body>
+</html>
