@@ -8,8 +8,9 @@
 <body>
     <script type="text/javascript">
     var today = new Date();
-    var date = today.getDate();
-    var nextdate = date + 1;
+    var date = today.getDate(); 
+    var nextdate = today.setDate(date + 1); 
+    nextdate = today.getDate(nextdate);
     </script>
     <h1>
       <script type="text/javascript">
