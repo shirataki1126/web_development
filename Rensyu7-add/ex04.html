@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="Sample.css">
+  <title>サンプル</title>
+</head>
+  <script type="text/javascript">
+  function Carchg(picURL)
+  {
+    document.images["MyCar"].src = picURL;
+  }
+  </script>
+<body>
+  <h1>商品のご紹介</h1>
+  <h2>やさしいシリーズ</h2>
+  <p>画像<br>
+    <img src="Carchg()" width="200", height="100" name="MyCar">
+  </p>
+  <h3 onmouseover="Carchg('car1.jpg')">乗用車</h3>
+  <p>5人まで乗車することができます。家族用の車です。</p>
+  <h3 onmouseover="Carchg('car2.jpg')">トラック</h3>
+  <p>荷物の運搬にご利用できます。業務用の車です。</p>
+  <h3 onmouseover="Carchg('car3.jpg')">オープンカー</h3>
+  <p>晴天時に天窓を開閉できます。レジャー用に最適です。</p>
+</body>
+<html>
