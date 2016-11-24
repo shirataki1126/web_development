@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="Sample.css">
+  <title>サンプル</title>
+</head>
+  <script type="text/javascript">
+  function check()
+  {
+    var key = "^[a-zA-Z0-9.!#$%&'*+/=?^_`~-]+@[a-zA-Z0-9-]+\\.(?:\.[a-zA-Z0-9-]+)+$";
+    var p = new RegExp(key);
+    var s = myform.mail.value;
+    var res = s.match(p);
+
+    if (res == null) {
+      window.alert("入力が誤っています。");
+      res = false;
+    } else{
+      window.alert("送信しました。");
+      res = true;
+    }
+    return res;
+  }
+  </script>
+<body>
+  <h1>メールアドレス</h1>
+  <form name="myform" action="Rensyu8-1.html"
+  onsubmit = "return check()">
+  <input type="text" name = "mail"/>
+  <input type="submit" value="送信"/>
+</form>
+</body>
+</html>
