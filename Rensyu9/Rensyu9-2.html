@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta name="author" content="yoshikawataiki@k16123kk">
+<meta name="generator" content="atom">
+<!-- End of author and generator -->
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="Sample.css">
+  <title>サンプル</title>
+  <script type="text/javascript">
+  function search()
+  {
+    var e = document.getElementById("heading");
+    var str = e.innerHTML;
+
+    var hoge = function (){window.alert(str);}
+    hoge();
+  }
+  </script>
+</head>
+<body>
+  <h1 id="heading">商品のご紹介</h1>
+  <input type="button" value="見出しを調べる" onclick="search()"/>
+</body>
+</html>

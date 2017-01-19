@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta name="author" content="yoshikawataiki@k16123kk">
+<meta name="generator" content="atom">
+<!-- End of author and generator -->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="Sample.css">
+    <title>サンプル</title>
+    <script type="text/javascript">
+      var c = true;
+      function change()
+      {
+        if (c == true) {
+          var elm = document.getElementById("image");
+          elm.src = "car2.jpg"
+          c = false;
+        } else {
+          var elm = document.getElementById("image");
+          elm.src = "car1.jpg";
+          c = true;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>商品の紹介</h1>
+    <input type="button" value="変更" onclick="change()"/>
+    <img id="image" src="car1.jpg"/>
+  </body>
+</html>

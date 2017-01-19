@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<meta name="author" content="yoshikawataiki@k16123kk">
+<meta name="generator" content="atom">
+<!-- End of author and generator -->
+<html lang="ja">
+<meta charset="utf-8">
+<head>
+  <link rel="stylesheet" href="Sample.css">
+  <title>サンプル</title>
+  <script type="text/javascript">
+  function init()
+  {
+    var t = window.setInterval("draw()", 500);
+  }
+  function draw()
+  {
+    var c = document.getElementById("canvas");
+    var cnt = c.getContext("2d");
+
+    cnt.shadowBlur = 10;
+    cnt.shadowColor = "#000000";
+
+    var x = parseInt(Math.random() * 200);
+    var y = parseInt(Math.random() * 200);
+    var r = parseInt(Math.random() * 255);
+    var b = parseInt(Math.random() * 255);
+
+    cnt.beginPath();
+    cnt.arc(x, y, 10, 0, Math.PI*2, false);
+    cnt.closePath();
+    var color = "rgb(" + r + ",255," + b + ")";
+
+    cnt.fillStyle = color;
+    cnt.fill();
+  }
+  </script>
+</head>
+<body onload="init()">
+  <h1>商品の紹介</h1>
+  <canvas id="canvas" width="200", height="200"></canvas>
+</body>
+</html>
