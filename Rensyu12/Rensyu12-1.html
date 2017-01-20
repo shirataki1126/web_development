@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<meta name="author" content="yoshikawataiki@k16123kk">
+<meta name="generator" content="atom">
+<!-- End of author and generator -->
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>サンプル</title>
+</head>
+<script type="text/javascript">
+var a = navigator.userAgent;
+var ios = a.indexOf("iPhone")>0 || a.indexOf("iPad")>0 || a.indexOf("iPod")>0;
+var android =  a.indexOf("Android")>0;
+if(ios == true || android == true){
+  document.writeln('<link rel="stylesheet" href="SamplePhone.css">');
+}
+else{
+  document.writeln('<link rel="stylesheet" href="Sample.css">');
+}
+</script>
+<body>
+  <h1>
+    <script>
+    if(ios == true || android == true){
+      document.writeln("店舗案内（スマートフォン）");
+    }
+    else{
+      document.writeln("店舗案内（PC）");
+    }
+    </script>
+  </h1>
+</body>
+</html>
